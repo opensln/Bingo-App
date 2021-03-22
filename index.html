@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Virtual Bingo Caller</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8" />
+
+	<link rel="stylesheet" type="text/css" href="./Bingo_css/NewBingo.css">
+
+	<style>
+
+
+	</style>
+</head>
+
+<body>
+
+	<h2 id=""></h2>
+
+	<div id="fullscreenBackground">
+		<header id="headerBar">
+			<h1 id="pageHeader">"BRUNO's BINGO BOX"</h1>
+		</header>
+		<section id="userinfoDiv">
+
+			<h4 id="requestRange">Select your amount of bingo balls: </h4>
+
+			<section id="userselectDiv">
+				<form>
+					<input type="number" id="userRange" min="20" max="90" step="10">
+				</form>
+			</section>
+
+			<button id="confirmBtn" onclick="checkvalidInput()">Confirm Bingo Balls</button>
+
+			<h4 id="showInitialArray">"Waiting..."</h4>
+
+			<p id="infoTrail"> </p>
+			<span id="newAmountOfItems"> </span>
+
+		</section>
+
+		<div id="bingoBallDiv">
+			<h3 id="nextRoundButtonDiv">Click "here" for next Number</h3>
+			<h1 id="LastNumberHeader">Latest Number Called... </h1>
+			<div id="CurrentcalledNumber" class ="noselect">?</div>
+		</div>
+
+		<section id="main">
+			<h2 id="calledNumber">Called number list..."</h2>
+			<h2 id="RemainingNumbers"> </h2>
+		</section>
+
+
+		<h2 id="showArrayNumberAfter"> </h2>
+
+
+	</div>
+    	<script src="./Bingo_js/NewBingo.js"></script>
+</body></html>

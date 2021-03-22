@@ -1,0 +1,237 @@
+		* {
+			box-sizing: border-box;
+			font-family: roboto;
+		}
+
+		.noselect {
+			-webkit-touch-callout: none; /* iOS Safari */
+			  -webkit-user-select: none; /* Safari */
+			   -khtml-user-select: none; /* Konqueror HTML */
+				 -moz-user-select: none; /* Old versions of Firefox */
+				  -ms-user-select: none; /* Internet Explorer/Edge */
+					  user-select: none; /* Non-prefixed version, currently
+											supported by Chrome, Edge, Opera and Firefox */
+		  }
+
+		#fullscreenBackground {
+			margin-top: -20px;
+			height: 120vh;
+			width: auto;
+			background-image: url("../img/bingo_bg.jpg");
+			background-size: cover;
+			background-color: grey;
+		}
+
+		#pageHeader {
+			margin-top: 0px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 100%;
+			text-align: center;
+			color: white;
+			background: rgba(255, 255, 255, 0.2);
+			padding: 5px;
+
+		}
+
+		#userselectDiv {
+			display: block;
+			text-align: center;
+			margin-bottom: 5px;
+		}
+
+		#userRange {
+			width: 100px;
+			border-radius: 5px;
+			text-align: center;
+			font-size: 1.5rem;
+		}
+
+		#confirmBtn {
+			width: 200px;
+			border-radius: 5px;
+			background-color: red;
+			color: white;
+			font-size: 1.2rem;
+		}
+
+		#userinfoDiv {
+			text-align: center;
+		}
+
+		h3:hover {
+			cursor: pointer;
+		}
+
+		#requestRange,
+		#showInitialArray {
+			margin-top: 7px;
+			margin-bottom: 7px;
+			color: white;
+			white-space: normal;
+			font-size: 1.5rem;
+		}
+
+
+		#main {
+			width: 100%;
+			display: inline-flex;
+
+		}
+
+		#bingoBallDiv {
+			width: 90%;
+			height: 275px;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
+
+
+		#LastNumberHeader {
+			margin-bottom: 5px;
+			color: white;
+		}
+
+		#CurrentcalledNumber {
+			width: 180px;
+			height: 180px;
+			display: inline-block;
+			background-color: red;
+			/*			background-image: url(img/Red_Circle.png);*/
+			background-size: contain;
+			background-repeat: no-repeat;
+			/*			background-position: center;*/
+			text-align: center;
+			/*			border: solid red 2px;*/
+			border-radius: 100px;
+			color: white;
+			/*			vertical-align: middle;*/
+			font-size: 5rem;
+			line-height: 10rem;
+		}
+
+		#CurrentcalledNumber:hover {
+			cursor: pointer;
+		}
+
+		#nextRoundButtonDiv {
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 5px;
+			margin-bottom: 10px;
+			width: 50%;
+			min-width: 50px;
+			border: solid red 2px;
+			border-radius: 50px;
+			background-color: white;
+
+		}
+
+		#calledNumber {
+			width: 48%;
+			height: 230px;
+			margin-left: auto;
+			text-align: center;
+			color: white;
+			border: solid 1px black;
+			margin-top: 10px;
+			background-color: white;
+			color: red;
+			border-radius: 10px 0px 0px 10px;
+			font-size: 1.3rem;
+			/*			white-space: normal;*/
+		}
+
+		#RemainingNumbers {
+			width: 48%;
+			height: 230px;
+			margin-right: auto;
+			text-align: center;
+			vertical-align: top;
+			background-color: white;
+			color: black;
+			border: solid 1px black;
+			margin-top: 10px;
+			border-radius: 0px 10px 10px 0px;
+			font-size: 1.3rem;
+
+		}
+
+		#infoTrail,
+		#newAmountOfItems {
+			display: none;
+		}
+
+		/*     --------------------------------------------------------Media Queries-----------------------------------------------*/
+
+
+		@media only screen and (max-width: 768px) {
+			/* For ipad */
+
+			#fullscreenBackground {
+				margin-top: -20px;
+				height: 180vh;
+			}
+
+			#pageHeader {
+				margin-top: 0px;
+				margin-left: auto;
+				margin-right: auto;
+				width: 100%;
+				text-align: center;
+				color: white;
+				font-size: 1.4rem;
+			}
+
+			#bingoBallDiv {
+				width: 90%;
+				height: 280px;
+			}
+
+			#LastNumberHeader {
+				margin-bottom: 5px;
+				color: white;
+				font-size: 1.5rem;
+				width: 94%;
+			}
+
+			#nextRoundButtonDiv {
+				text-align: center;
+				margin-left: auto;
+				margin-right: auto;
+				width: 94%;
+				min-width: 50px;
+				border: solid red 2px;
+				border-radius: 50px;
+				background-color: white;
+				font-size: 1.3rem;
+			}
+
+			#main {
+				width: 100%;
+				display: block;
+				font-size: 16px;
+			}
+
+			#calledNumber,
+			#RemainingNumbers {
+				width: 80%;
+				height: auto;
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+				color: white;
+				border: solid 1px black;
+				margin-top: 10px;
+				background-color: white;
+				color: red;
+				border-radius: 10px 10px 10px 10px;
+			}
+
+			#RemainingNumbers {
+				color: black;
+			}
+
+		}
